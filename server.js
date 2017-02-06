@@ -2,7 +2,7 @@
 // ==============================
 
 // This solutions adds a Customers model to keep track of the folks
-// who eat particular burgers. The user will have an option to list 
+// who eat particular burgers. The user will have an option to list
 // the name of the devourer, and that name will be associated
 // with the devoured burger.
 
@@ -15,7 +15,7 @@
 // Step 3: edited burger controller to use setAssociates
 //         to save and set the name of the devourer.
 
-// Step 4: Edited index.handlebars to account for scenarios 
+// Step 4: Edited index.handlebars to account for scenarios
 //		   when a customer is and isn't listed.
 
 // Step 5: Minor css style changes to stop elements from bleeding into eachother.
@@ -24,11 +24,11 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
-var methodOverride = require('method-override')
+var methodOverride = require('method-override');
 
 
 // bring in the models
-var models = require('./models')
+var models = require('./models');
 
 // sync the models
 models.sequelize.sync();
